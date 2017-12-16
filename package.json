@@ -7,9 +7,16 @@
     "bootstrap": "^4.0.0-beta.2",
     "font-awesome": "^4.7.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mkdirp": "^0.5.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo Startando",
+    "prestart": "echo Pre_Startando",
+    "poststart": "echo Post_Startando",
+    "preinstall": "mkdirp src/components/bootstrap/ src/components/font-awesome/",
+    "postinstall": "cp -r node_modules/bootstrap/dist/* src/components/bootstrap/ && cp -r node_modules/font-awesome/css src/components/font-awesome/ && cp -r node_modules/font-awesome/fonts src/components/font-awesome/"
   },
   "author": "",
   "license": "ISC"
