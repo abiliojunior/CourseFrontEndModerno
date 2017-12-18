@@ -1,0 +1,20 @@
+$cor:orange;
+
+body{
+    background: cor;
+}
+.botao{
+    display: inline-block;
+    border-radius: 15px;
+    background: #17a0a0;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+
+}
+
+
+.botao-danger{
+    background: red;
+}
