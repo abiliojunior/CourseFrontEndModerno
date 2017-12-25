@@ -1,5 +1,28 @@
 .header-animado{
-    $h: 320px;
+    $h: 300px;
     background-color: $main-color;
-    height: $h;
+    padding-top: 96px;
+    padding-bottom: 0;
+    margin-bottom: .5em;
+
+    &__title{
+        color: rgb(53, 1, 1);
+        font-size: 38px;
+    }
+
+    &__subtitle{
+        color: white;
+        font-size: 34px;
+        font-weight: 300;
+        line-height: 1.5;
+
+    }
+
+    &__ilustra{
+        background-image: url(../imagens/cenario_all_960.png);
+        height: $h/2;
+        background-size: auto 100%;
+        background-position: 50% top;
+
+    }
 }
