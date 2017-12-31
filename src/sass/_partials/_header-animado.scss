@@ -64,31 +64,29 @@
                 left: 0;
                 width: $largura_cenario*2;
             }
+           
+            $items: (
+                nuvens: null ,
+                casas: '20s linear infinite reverse',
+                rua:'10s linear infinite reverse',
+                carrosCima:'5s linear infinite reverse',
+                carrosBaixo:'5s linear infinite'
 
-            
+            );
 
-            .nuvens{
-                @include anima('cenario_nuvens.png');
+            @each $key, $valor in $items{
 
-            }
+                @if ($valor) {
+                    .#{$key} {
+                        @include anima('cenario_#{$key}.png',$valor);
+                    }
 
-            .casas{
-                @include anima('cenario_casas.png');
-            }
+                } @else {
+                    .#{$key} {
+                        @include anima('cenario_#{$key}.png');
+                    }
 
-            .rua{
-                @include anima('cenario_rua.png','10s linear infinite reverse');
-                
-            }
-
-            .carrosCima{
-                @include anima('cenario_carrosCima.png','5s linear infinite reverse');
-                
-            }
-             
-            .carrosBaixo{
-                @include anima('cenario_carrosBaixo.png','5s linear infinite');
-               
+                }
             }
         }
     }
