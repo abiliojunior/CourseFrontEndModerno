@@ -17,8 +17,7 @@
     "start": "echo Startando",
     "prestart": "echo Pre_Startando",
     "poststart": "echo Post_Startando",
-    "preinstall": "mkdirp src/components/bootstrap/ src/components/font-awesome/",
-    "postinstall": "cp -r node_modules/bootstrap/dist/* src/components/bootstrap/ && cp -r node_modules/font-awesome/css src/components/font-awesome/ && cp -r node_modules/font-awesome/fonts src/components/font-awesome/",
+    "postinstall": "mkdirp src/components/bootstrap/ src/components/font-awesome/ && cp -r node_modules/bootstrap/dist/* src/components/bootstrap/ && cp -r node_modules/font-awesome/css src/components/font-awesome/ && cp -r node_modules/font-awesome/fonts src/components/font-awesome/",
     "gulp": "gulp"
   },
   "author": "",
