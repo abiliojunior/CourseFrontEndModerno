@@ -100,7 +100,7 @@
         background: #528e84; }
     .js .header-nav__menu {
       display: none; }
-    .menu-oponned .header-nav__menu {
+    .menu-opened .header-nav__menu {
       display: block; }
 
 .card-portfolio {
@@ -158,7 +158,7 @@
     top: 1px; }
 
 .rodape {
-  background: #c5ddd9;
+  background: #84b8af;
   color: white;
   padding: 1em 0; }
   .rodape ul {
