@@ -1,0 +1,21 @@
+%inputContato{
+    margin-bottom: 25px;
+    transition: backgroud .3s;
+    &:focus{
+        background: gray;
+    }
+}
+
+input[type="text"],
+input[type="email"]{
+    @extend %inputContato;
+    padding: 25px 15px;
+   
+}
+
+input[type="textarea"]{
+    @extend %inputContato;
+    height: 150px;
+   
+}
+

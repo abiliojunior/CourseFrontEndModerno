@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Site pessoal Abilio Junior</title>
+
+    <link rel="stylesheet"  href="components/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="components/font-awesome/css/font-awesome.min.css">
+    
+
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+
+@@include('./inc/nav.html')
+  
+<div class="jumbotron header-animado text-center">
+    <div class="container">
+        <p class="header-animado__title">O que ando Fazendo</p>
+        <h1 class="header-animado__subtitle">Veja o meu trabalho</h1>
+    </div>
+
+    <div class="header-animado__ilustra">
+        <div class="nuvens"></div>
+        <div class="casas"></div>        
+        <div class="rua"></div>
+        <div class="carrosCima"></div>
+        <div class="carrosBaixo"></div>
+    </div>
+        
+</div>
+  
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Último Trabalhos</h2>
+        </div>
+
+        @@loop('./inc/card-portfolio.html', [
+            {
+                "titulo":"titulo alterado 01",
+                "imagem":"imagens/portfolio/01.jpg",
+                "texto": "pequeno texto",
+                "link":"#",
+                "alt":"Texto alternativo"
+
+            },
+            {
+                "titulo":"titulo alterado 02",
+                "imagem":"imagens/portfolio/02.jpg",
+                "texto": "pequeno texto",
+                "link":"#",
+                "alt":"Texto alternativo"
+
+            },
+            {
+                "titulo":"titulo alterado 02",
+                "imagem":"imagens/portfolio/03.jpg",
+                "texto": "pequeno texto",
+                "link":"#",
+                "alt":"Texto alternativo"
+
+            },
+            {
+                "titulo":"titulo alterado 02",
+                "imagem":"imagens/portfolio/04.jpg",
+                "texto": "pequeno texto",
+                "link":"#",
+                "alt":"Texto alternativo"
+
+            },
+            {
+                "titulo":"titulo alterado 05",
+                "imagem":"imagens/portfolio/05.jpg",
+                "texto": "pequeno texto",
+                "link":"#",
+                "alt":"Texto alternativo"
+
+            },
+            {
+                "titulo":"titulo alterado 06",
+                "imagem":"imagens/portfolio/06.jpg",
+                "texto": "pequeno texto",
+                "link":"#",
+                "alt":"Texto alternativo"
+
+            },
+            {
+                "titulo":"titulo alterado 07",
+                "imagem":"imagens/portfolio/07.jpg",
+                "texto": "pequeno texto",
+                "link":"#",
+                "alt":"Texto alternativo"
+
+            }
+            ])
+
+
+        
+    </div> <!-- row-->
+    <hr>
+</div> <!-- container-->
+    
+@@include('./inc/footer.html')
+
+
+    <script src="javascript/main.js"></script>
+    <script src="javascript/menu.js"></script>
+   
+    
+</body>
+</html>
