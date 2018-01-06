@@ -2,7 +2,7 @@
 .header-animado {
   background-color: #64a59a;
   padding-top: 96px;
-  padding-bottom: 0;
+  padding-bottom: 32px;
   margin-bottom: .5em; }
   .header-animado__title {
     color: #350101;
@@ -176,10 +176,12 @@
     .card-portfolio__imagem Img {
       max-width: 100%;
       opacity: .7;
-      transition: opacity .3s linear, transform 1s ease-in; }
+      transition: opacity .3s linear, transform 1s ease-in, filter .5s linear;
+      filter: grayscale(1); }
   .card-portfolio:hover img {
     opacity: 1;
-    transform: scale(1.15) rotate(-5deg); }
+    transform: scale(1.15) rotate(-5deg);
+    filter: grayscale(0); }
   .card-portfolio:hover .card-portfolio__btn {
     background: #c5ddd9;
     color: white; }
